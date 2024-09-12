@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>currency converter</title>
+    <link rel="stylesheet" href="chat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- <h4 id="fact"></h4> -->
+    <!-- <button id="btn" onclick="getfacts()">Next Fact</button> -->
+
+    <div class="contianer">
+        <h2>Currency Converter</h2>
+        <form>
+            <div class="amount">
+                <label for="input">Enter your amount</label>
+                <input type="text" placeholder="Amount">
+            </div>
+            <div class="dropdown">
+                <div class="from"><p>FROM</p>
+                    <div class="select-con">
+                        <img src="https://flagsapi.com/US/flat/64.png">
+                        <select name="from" id="fc">
+                            <option value="USD">USD</option>
+                            <option value="IDN">IDN</option>
+                            <option value="PAK">PAK</option>
+                            <option value="CHNA">CHINA</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                <div class="to">
+                <p>TO</p>
+                <div class="select-con">
+                    <img src="https://flagsapi.com/PK/flat/64.png">
+                    <select name="to" id="fc">
+                        <option value="USD">USD</option>
+                        <option value="IDN">IDN</option>
+                        <option value="PAK" selected>PAK</option>
+                        <option value="CHNA">CHINA</option>
+                    </select>
+                </div>
+                </div>
+            </div>
+            <div class="exchange">
+                    <h4 class="e1">Amount</h4>
+                <button type="submit">Exchange rate</button>
+            </div>
+        </form>
+    </div>
+    
+    <script src="codes.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
